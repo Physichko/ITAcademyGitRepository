@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Lesson2Task1_Implicit_and_explicit_type_casting_</RootNamespace>
+  </PropertyGroup>
+
+</Project>
