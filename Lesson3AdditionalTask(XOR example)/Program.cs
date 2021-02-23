@@ -12,6 +12,14 @@ namespace Lesson3AdditionalTask_XOR_example_
             Console.WriteLine(character);
             character = (char)(character ^ secretKey);//Расшифровка
             Console.WriteLine(character);
+            string STR = "ABRAKADABRA";
+            char[] charr = STR.ToCharArray();
+            for (int i = 0; i < charr.Length; i++)
+            {
+                if (charr[i] =='A')
+                    charr[i] = (char)(charr[i] ^ secretKey);//Шифровка
+            }
+            Console.WriteLine(charr);
         }
     }
 }
