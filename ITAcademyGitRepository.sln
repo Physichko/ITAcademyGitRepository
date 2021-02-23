@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTask1(QSort)", "AdditionalTask1(QSort)\AdditionalTask1(QSort).csproj", "{F9D4943A-660C-45EE-AA80-26A698039FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTask1(QSort)", "AdditionalTask1(QSort)\AdditionalTask1(QSort).csproj", "{F9D4943A-660C-45EE-AA80-26A698039FCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2Task1(Implicit and explicit type casting)", "Lesson2Task1(Implicit and explicit type casting)\Lesson2Task1(Implicit and explicit type casting).csproj", "{D7ED96A4-B99E-4D21-A432-1A00A04B5D63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson2Task1(Implicit and explicit type casting)", "Lesson2Task1(Implicit and explicit type casting)\Lesson2Task1(Implicit and explicit type casting).csproj", "{D7ED96A4-B99E-4D21-A432-1A00A04B5D63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFromLesson(any sorting algorithm you want)", "TaskFromLesson(any sorting algorithm you want)\TaskFromLesson(any sorting algorithm you want).csproj", "{7A262A61-A06B-4FA8-B381-95B7F47FED53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskFromLesson(any sorting algorithm you want)", "TaskFromLesson(any sorting algorithm you want)\TaskFromLesson(any sorting algorithm you want).csproj", "{7A262A61-A06B-4FA8-B381-95B7F47FED53}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTask2(String sorting)", "AdditionalTask2(String sorting)\AdditionalTask2(String sorting).csproj", "{C0B1FB13-365B-46B4-BCF7-9865A70B1EAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3Task1(credit payments)", "Lesson3Task1(credit payments)\Lesson3Task1(credit payments).csproj", "{65171772-3184-4409-AB1E-AF18D890FE44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3AdditionalTask(palindrome)", "Lesson3AdditionalTask(palindrome)\Lesson3AdditionalTask(palindrome).csproj", "{D3F4AF73-2F68-4CAA-9E01-5376B946C484}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{C0B1FB13-365B-46B4-BCF7-9865A70B1EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0B1FB13-365B-46B4-BCF7-9865A70B1EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0B1FB13-365B-46B4-BCF7-9865A70B1EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65171772-3184-4409-AB1E-AF18D890FE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65171772-3184-4409-AB1E-AF18D890FE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65171772-3184-4409-AB1E-AF18D890FE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65171772-3184-4409-AB1E-AF18D890FE44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F4AF73-2F68-4CAA-9E01-5376B946C484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F4AF73-2F68-4CAA-9E01-5376B946C484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F4AF73-2F68-4CAA-9E01-5376B946C484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F4AF73-2F68-4CAA-9E01-5376B946C484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
