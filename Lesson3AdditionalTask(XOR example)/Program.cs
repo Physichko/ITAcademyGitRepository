@@ -4,22 +4,41 @@ namespace Lesson3AdditionalTask_XOR_example_
 {
     class Program
     {
+        static char[] Encryptor(char[] chArr, short secretChar)//Шифратор
+        {
+            for (int i = 0; i < chArr.Length; i++)
+            {
+                if (chArr[i] == 'A')
+                {
+                    chArr[i] = (char)(chArr[i] ^ secretChar);
+
+                }
+
+            }
+            return chArr;
+        }
+        static char[] Decriptor(char[] chArr, short secretChar)//Дешифратор
+        {
+            for (int i = 0; i < chArr.Length; i++)
+            {
+                if ((char)(chArr[i] ^ secretChar) == 'A')
+                {
+                    chArr[i] = 'A';
+                }
+            }
+            return chArr;
+        }
         static void Main()
         {
-            ushort secretKey = 0x0099; // Секретный ключ длиной 16 бит
-            char character = 'A';
-            character = (char)(character ^ secretKey);//Шифровка
-            Console.WriteLine("was A ->"+character);
-            character = (char)(character ^ secretKey);//Расшифровка
-            Console.WriteLine("was O ->"+character);
-            string STR = "ABRAKADABRA";
-            char[] charr = STR.ToCharArray();
-            for (int i = 0; i < charr.Length; i++)
-            {
-                if (charr[i] =='A')
-                    charr[i] = (char)(charr[i] ^ secretKey);//Шифровка
-            }
-            Console.WriteLine(charr);
+            Console.WriteLine("Введите сообщение с символом A(английская)(например ABRAKADABRA):");
+
+            string str = Console.ReadLine();
+            char[] chArr = str.ToCharArray();
+            chArr = Encryptor(chArr, 0x0088);
+            Console.WriteLine(chArr);
+            chArr = Decriptor(chArr, 0x0088);
+            Console.WriteLine(chArr);
+
         }
     }
 }

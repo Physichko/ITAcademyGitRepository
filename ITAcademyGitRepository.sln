@@ -11,11 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskFromLesson(any sorting 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTask2(String sorting)", "AdditionalTask2(String sorting)\AdditionalTask2(String sorting).csproj", "{C0B1FB13-365B-46B4-BCF7-9865A70B1EAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3Task1(credit payments)", "Lesson3Task1(credit payments)\Lesson3Task1(credit payments).csproj", "{65171772-3184-4409-AB1E-AF18D890FE44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3Task1(credit payments)", "Lesson3Task1(credit payments)\Lesson3Task1(credit payments).csproj", "{65171772-3184-4409-AB1E-AF18D890FE44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3AdditionalTask(palindrome)", "Lesson3AdditionalTask(palindrome)\Lesson3AdditionalTask(palindrome).csproj", "{D3F4AF73-2F68-4CAA-9E01-5376B946C484}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3AdditionalTask(palindrome)", "Lesson3AdditionalTask(palindrome)\Lesson3AdditionalTask(palindrome).csproj", "{D3F4AF73-2F68-4CAA-9E01-5376B946C484}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3AdditionalTask(XOR example)", "Lesson3AdditionalTask(XOR example)\Lesson3AdditionalTask(XOR example).csproj", "{4F6DCE87-A409-428F-AC6B-0BC0F3CE14F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3AdditionalTask(XOR example)", "Lesson3AdditionalTask(XOR example)\Lesson3AdditionalTask(XOR example).csproj", "{4F6DCE87-A409-428F-AC6B-0BC0F3CE14F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3AdditionalTask(CheckedUncheked)", "Lesson3AdditionalTask(CheckedUncheked)\Lesson3AdditionalTask(CheckedUncheked).csproj", "{6479899D-1FBA-45BA-B189-608D1D7C9A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3AdditionalTask(Xor without Xor)", "Lesson3AdditionalTask(Xor without Xor)\Lesson3AdditionalTask(Xor without Xor).csproj", "{904DEBD0-A7F2-4D0A-BE8C-20A8FCCAD6AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson3AdditionalTask(Inversion without inversion)", "Lesson3AdditionalTask(Inversion without inversion)\Lesson3AdditionalTask(Inversion without inversion).csproj", "{07BE6868-0817-435D-8045-DB6A1E5F0A17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{4F6DCE87-A409-428F-AC6B-0BC0F3CE14F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F6DCE87-A409-428F-AC6B-0BC0F3CE14F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F6DCE87-A409-428F-AC6B-0BC0F3CE14F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6479899D-1FBA-45BA-B189-608D1D7C9A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6479899D-1FBA-45BA-B189-608D1D7C9A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6479899D-1FBA-45BA-B189-608D1D7C9A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6479899D-1FBA-45BA-B189-608D1D7C9A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904DEBD0-A7F2-4D0A-BE8C-20A8FCCAD6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904DEBD0-A7F2-4D0A-BE8C-20A8FCCAD6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904DEBD0-A7F2-4D0A-BE8C-20A8FCCAD6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904DEBD0-A7F2-4D0A-BE8C-20A8FCCAD6AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BE6868-0817-435D-8045-DB6A1E5F0A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BE6868-0817-435D-8045-DB6A1E5F0A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BE6868-0817-435D-8045-DB6A1E5F0A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BE6868-0817-435D-8045-DB6A1E5F0A17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
