@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3AdditionalTask(Xor w
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3AdditionalTask(Inversion without inversion)", "Lesson3AdditionalTask(Inversion without inversion)\Lesson3AdditionalTask(Inversion without inversion).csproj", "{07BE6868-0817-435D-8045-DB6A1E5F0A17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdditionalTask3(QueueWithPriority)", "AdditionalTask2(QueueWithPriority)\AdditionalTask3(QueueWithPriority).csproj", "{41EE5D03-1476-4F2F-8D54-599F641B1520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTask3(QueueWithPriority)", "AdditionalTask3(QueueWithPriority)\AdditionalTask3(QueueWithPriority).csproj", "{103241B3-DB74-4099-BFA8-947EE2D78183}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +71,10 @@ Global
 		{07BE6868-0817-435D-8045-DB6A1E5F0A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07BE6868-0817-435D-8045-DB6A1E5F0A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07BE6868-0817-435D-8045-DB6A1E5F0A17}.Release|Any CPU.Build.0 = Release|Any CPU
-		{41EE5D03-1476-4F2F-8D54-599F641B1520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41EE5D03-1476-4F2F-8D54-599F641B1520}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41EE5D03-1476-4F2F-8D54-599F641B1520}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41EE5D03-1476-4F2F-8D54-599F641B1520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{103241B3-DB74-4099-BFA8-947EE2D78183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{103241B3-DB74-4099-BFA8-947EE2D78183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{103241B3-DB74-4099-BFA8-947EE2D78183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{103241B3-DB74-4099-BFA8-947EE2D78183}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
