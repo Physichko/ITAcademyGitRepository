@@ -8,7 +8,7 @@ namespace AdditionalTask3_QueueWithPriority_
     sealed class QueueWithPriority<T> where T : IPrioritySorted, new()
     {
         T[] typeOfTArray;
-        int queuePosition = -1;
+        //int queuePosition = -1;
         public QueueWithPriority()
         {
             typeOfTArray = new T[0];
@@ -75,22 +75,22 @@ namespace AdditionalTask3_QueueWithPriority_
         {
             return typeOfTArray.GetEnumerator();
         }
-        public bool MoveNext()
-        {
-            if (queuePosition > typeOfTArray.Length - 1)
-            {
-                queuePosition++;
-                return true;
-            }
-            else return false;
-        }
-        public void Reset()
-        {
-            queuePosition = -1;
-        }
-        public object Current
-        {
-            get { return typeOfTArray[queuePosition]; }
-        }
+        //public bool MoveNext()
+        //{
+        //    if (queuePosition > typeOfTArray.Length - 1)
+        //    {
+        //        queuePosition++;
+        //        return true;
+        //    }
+        //    else return false;
+        //}
+        //public void Reset()
+        //{
+        //    queuePosition = -1;
+        //}
+        //public object Current
+        //{
+        //    get { return typeOfTArray[queuePosition]; }
+        //}
     }
 }
