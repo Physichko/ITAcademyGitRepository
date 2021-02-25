@@ -74,7 +74,7 @@ namespace AdditionalTask3_QueueWithPriority_
 
             foreach (Fruit fruit in queue2)
             {
-                Console.WriteLine(fruit.KindOfType + "   and (His/her) priority is " + fruit.PriorityLevel);
+                Console.WriteLine(fruit.KindOfType + "   and  priority is " + fruit.PriorityLevel);
             }
 
             Console.WriteLine($"Length of queue is - {queue2.Length}");
