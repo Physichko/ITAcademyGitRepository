@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson3AdditionalTask(Inver
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdditionalTask3(QueueWithPriority)", "AdditionalTask3(QueueWithPriority)\AdditionalTask3(QueueWithPriority).csproj", "{103241B3-DB74-4099-BFA8-947EE2D78183}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4Task1(PrimeNumbers)", "Lesson4Task1(PrimeNumbers)\Lesson4Task1(PrimeNumbers).csproj", "{8A15ED43-520C-435A-81D0-25D81E586C33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{103241B3-DB74-4099-BFA8-947EE2D78183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{103241B3-DB74-4099-BFA8-947EE2D78183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{103241B3-DB74-4099-BFA8-947EE2D78183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A15ED43-520C-435A-81D0-25D81E586C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A15ED43-520C-435A-81D0-25D81E586C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A15ED43-520C-435A-81D0-25D81E586C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A15ED43-520C-435A-81D0-25D81E586C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
