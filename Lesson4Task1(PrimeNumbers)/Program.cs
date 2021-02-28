@@ -63,10 +63,11 @@ namespace Lesson4Task1_PrimeNumbers_
             else Console.WriteLine("Введено не число или число меньше 0");
             //Закончилась часть программы через while
             #endregion
-
+            Console.WriteLine();
+            Console.WriteLine();
             // Использование цикла for и замена for на while было представлено выше.
             // Cейчас будет представлена работа с операторами break и continue
-
+            
             int a = 0;
             while (a < 1000) 
             {
@@ -91,7 +92,7 @@ namespace Lesson4Task1_PrimeNumbers_
                 Console.WriteLine("а вышло из цикла for повысив свое значение до {0}",a);
                 if (a > 100)
                 {
-                    Console.WriteLine($"{a} > 100, значит выходим из цикла while");
+                    Console.WriteLine($"{a} > 100, значит выходим из цикла while (хотя условие while : a < 1000)");
                     break;
                 }
             }
