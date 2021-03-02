@@ -42,6 +42,7 @@ namespace Lesson4Task1_PrimeNumbers_
             else Console.WriteLine("Введено не число или число меньше 0");
             //Закончилась часть программы через for
             #endregion
+
             #region Часть через while
             //Часть программы через while
             Console.WriteLine(new string('-', 40));
