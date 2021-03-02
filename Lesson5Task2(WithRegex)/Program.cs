@@ -11,7 +11,7 @@ namespace Lesson5Task2_WithRegex_
             string @string = Console.ReadLine();
             string target = "А";
             Regex regex = new Regex(@"а");
-            Regex regex1 = new Regex(@"[а,и,е,у,я,э,ю]");
+            Regex regex1 = new Regex(@"[а,и,е,у,я,э,ю,ы,о]");
             string result = regex.Replace(@string, target);
             MatchCollection matches = regex1.Matches(@string);
             if (matches.Count > 0)
