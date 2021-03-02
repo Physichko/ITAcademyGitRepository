@@ -57,7 +57,7 @@ namespace Lesson5Task1_Arrays_
                 if (array[i] < 0)
                 {
                     int lastIndexOfNegative = Array.LastIndexOf(array, array[i]);
-                    return new string($"Индекс последнего отрицательного значения внутри массива : {lastIndexOfNegative}");
+                    return new string($"Индекс последнего отрицательного значения внутри массива : {lastIndexOfNegative}\nЗначение с этим индексом : {array[i]}");
                 }
             }
             return new string("В массиве отсутствуют отрицательные значения");
