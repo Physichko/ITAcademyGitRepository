@@ -15,16 +15,16 @@ namespace Lesson5Task1_Arrays_
             Console.WriteLine(new string('-', 120));
             Console.WriteLine("Часть 1. Эта часть программы посвящена поиску последнего отрицательного значения в массиве : ");
             Console.WriteLine(new string('-', 120));
-            methodsAndProperties.ToFillArrayWithRandomNumbers(intArray);
+            methodsAndProperties.FillArrayWithRandomNumbers(intArray);
             Console.WriteLine(methodsAndProperties.ShowArray(intArray));
-            Console.WriteLine(methodsAndProperties.ToFindLastIndexOfNegativeNumberInArray(intArray));
+            Console.WriteLine(methodsAndProperties.FindLastIndexOfNegativeNumberInArray(intArray));
             Console.WriteLine(new string('-', 120));
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(new string('-', 120));
             Console.WriteLine("Часть 2. Эта часть про обнуление оставшихся символов в строке двумерного массива после нахождения старшего в строке : ");
             Console.WriteLine(new string('-', 120));
-            methodsAndProperties.ToFillArrayWithRandomNumbers(twoDimentsionalArray);
+            methodsAndProperties.FillArrayWithRandomNumbers(twoDimentsionalArray);
             Console.WriteLine("Изначальный массив :");
             Console.WriteLine(new string('-', 120));
             Console.WriteLine(methodsAndProperties.ShowArray(twoDimentsionalArray));
@@ -39,7 +39,7 @@ namespace Lesson5Task1_Arrays_
             Console.WriteLine(new string('-', 120));
             Console.WriteLine("Часть 3. Эта часть про обнуление оставшихся символов в строке зубчатого массива после нахождения старшего в строке : ");
             Console.WriteLine(new string('-', 120));
-            methodsAndProperties.ToFillArrayWithRandomNumbers(jaggedArray);
+            methodsAndProperties.FillArrayWithRandomNumbers(jaggedArray);
             Console.WriteLine("Изначальный массив :");
             Console.WriteLine(new string('-', 120));
             Console.WriteLine(methodsAndProperties.ShowArray(jaggedArray));

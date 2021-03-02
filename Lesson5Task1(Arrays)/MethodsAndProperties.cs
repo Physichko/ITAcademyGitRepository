@@ -6,12 +6,11 @@ namespace Lesson5Task1_Arrays_
 {
     class MethodsAndProperties
     {
+        private Random random;
+
         public int HeightForTwoDimensional { get; }
         public int WidthForTwoDimensional { get; }
         public int AmountOfSubArrays { get; }
-
-
-        private Random random;
 
         public MethodsAndProperties(int HeightForTwoDimensional, int WidthForTwoDimensional, int AmountOfSubArrays)
         {
@@ -20,14 +19,14 @@ namespace Lesson5Task1_Arrays_
             this.AmountOfSubArrays = AmountOfSubArrays;
             random = new Random();
         }
-        public void ToFillArrayWithRandomNumbers(int[] array)
+        public void FillArrayWithRandomNumbers(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = random.Next(-3, 4);
             }
         }
-        public void ToFillArrayWithRandomNumbers(int[,] array)
+        public void FillArrayWithRandomNumbers(int[,] array)
         {
             for (int i = 0; i < HeightForTwoDimensional; i++)
             {
@@ -37,7 +36,7 @@ namespace Lesson5Task1_Arrays_
                 }
             }
         }
-        public void ToFillArrayWithRandomNumbers(int[][] array)
+        public void FillArrayWithRandomNumbers(int[][] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
@@ -51,7 +50,7 @@ namespace Lesson5Task1_Arrays_
                 }
             }
         }
-        public string ToFindLastIndexOfNegativeNumberInArray(int[] array)
+        public string FindLastIndexOfNegativeNumberInArray(int[] array)
         {
             for (int i = array.Length - 1; i >= 0; i--)
             {
