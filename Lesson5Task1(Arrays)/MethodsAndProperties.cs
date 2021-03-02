@@ -81,7 +81,7 @@ namespace Lesson5Task1_Arrays_
                     if (j > indexOfMax)
                         array[i, j] = 0;
                 }
-                max = 0;
+                max = -5;
             }
         }
         public void FillWithZeroAfterMaxValue(int[][] array)
@@ -103,7 +103,7 @@ namespace Lesson5Task1_Arrays_
                     if (j > indexOfMax)
                         array[i][j] = 0;
                 }
-                max = 0;
+                max = -5;
             }
         }
         public string ShowArray(int[,] array)
