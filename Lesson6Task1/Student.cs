@@ -6,12 +6,10 @@ namespace Lesson6Task1
 {
     sealed class Student
     {
-        Random random = new Random();
-
+        readonly Random random = new Random();
         public string Name { get; }
         public string Surname { get; }
-        public uint?[] Marks { get; set; }
-
+        public uint?[] Marks { get; private set; }
         public Student(string Name, string Surname)
         {
             this.Name = Name;
@@ -44,10 +42,17 @@ namespace Lesson6Task1
                 return result / amoutOfNotNullMarks;
             else return null;
         }
+        public void AddToGroup(Group groupToAdd)
+        {
+            groupToAdd.AddNewStudentToGroup(this);
+        }
+        public void RemoveFromGroup(Group groupToRemoveFrom)
+        {
+            groupToRemoveFrom.RemoveStudentFromGroup(this);
+        }
         public string ShowStudentInfo()
         {
             return string.Format($"student : {Name} {Surname}\t with marks: {ShowMarks()}\t and average score : {ShowAverageMark()}");
-
         }
         private void RandomMarks(uint?[] Marks)
         {

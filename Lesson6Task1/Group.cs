@@ -6,45 +6,42 @@ namespace Lesson6Task1
 {
     sealed class Group
     {
-        Student[] listOfStudents;
+
+        List<Student> listOfStudents;
         public int NumberOfGroup { get; }
-        public Group(int NumberOfGroup, params Student[] students)
+
+        public Group(int NumberOfGroup)
         {
             this.NumberOfGroup = NumberOfGroup;
-            listOfStudents = students;
+            listOfStudents = new List<Student>();
         }
-        public void MoveStudentToAnotherGroup(Student student, Group groupToMove)
-        {
-            groupToMove.AddNewStudentToGroup(RemoveStudentFromGroup(student));
-        }
-        public Student this[int index] 
+        public Student this[int index]
         {
             get { return listOfStudents[index]; }
             set { listOfStudents[index] = value; }
         }
-        private void AddNewStudentToGroup(Student newStudentToAdd) 
+        public void AddNewStudentToGroup(Student newStudentToAdd)
         {
-            Array.Resize<Student>(ref listOfStudents, listOfStudents.Length + 1);
-            listOfStudents[listOfStudents.GetUpperBound(0)] = newStudentToAdd;
-        }
-        private Student RemoveStudentFromGroup(Student studentToRemove) 
-        {
-            Student[] newListOfStudents = new Student[listOfStudents.Length -1];
-            int indexofStudentToRemove = Array.IndexOf(listOfStudents, studentToRemove);
-            Array.Copy(listOfStudents, 0, newListOfStudents, 0, indexofStudentToRemove );
-            Array.Copy(listOfStudents, indexofStudentToRemove+1, newListOfStudents, indexofStudentToRemove,listOfStudents.Length - indexofStudentToRemove-1);
-            Array.Resize<Student>(ref listOfStudents, newListOfStudents.Length);
-            listOfStudents = newListOfStudents;
-            return studentToRemove;
-        }
-        public string ShowGroupInfo() 
-        {
-            string result = $"Number of group is {NumberOfGroup}\n";
-            for (int i = 0; i < listOfStudents.Length; i++)
+            if (!listOfStudents.Contains(newStudentToAdd))
             {
-               result += $"{listOfStudents[i].ShowStudentInfo()}\n";
+                listOfStudents.Add(newStudentToAdd);
             }
-            return result;
+        }
+        public void RemoveStudentFromGroup(Student studentToRemove)
+        {
+            if (listOfStudents.Contains(studentToRemove))
+            {
+                listOfStudents.Remove(studentToRemove);
+            }
+        }
+        public string ShowGroupInfo()
+        {
+            StringBuilder sb = new StringBuilder($"Number of group is {NumberOfGroup}\n");
+            for (int i = 0; i < listOfStudents.Count; i++)
+            {
+                sb.Append($"{listOfStudents[i].ShowStudentInfo()}\n");
+            }
+            return sb.ToString();
         }
     }
 }

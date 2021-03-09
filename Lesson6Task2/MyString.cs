@@ -6,66 +6,88 @@ namespace Lesson6Task2
 {
     class MyString
     {
-        char[] myCharArray;
-        public int Length { get { return myCharArray.Length; } }
-      
+        List<char> myStringList;
+        public int Length { get { return myStringList.Count; } }
+        public char this[int index]
+        {
+            get { return myStringList[index]; }
+            set { myStringList[index] = value; }
+        }
         public MyString()
         {
-            myCharArray = new char[0];
+            myStringList = new List<char>();
         }
-
         public MyString(params char[] chars)
         {
-            myCharArray = chars;
+            myStringList = new List<char>();
+            myStringList.AddRange(chars);
         }
-        public MyString(string @string) 
+        public MyString(string @string)
         {
-            myCharArray = @string.ToCharArray();
+            myStringList = new List<char>();
+            myStringList.AddRange(@string.ToCharArray());
         }
-
-        public bool Contains(char charForSearching) 
+        public bool Contains(char charForSearching)
         {
-            for (int i = 0; i < myCharArray.Length; i++)
+            if (myStringList.Contains(charForSearching))
+                return true;
+            else return false;
+        }
+        public bool Contains(char[] charArrayForSearching)
+        {
+            int counter = 0;
+            for (int i = 0; i < myStringList.Count; i++)
             {
-                if (myCharArray[i] == charForSearching)
+                if (counter == charArrayForSearching.Length)
                     return true;
-            }
-            return false;
-        }
-        public int? IndexOf(char charForSearching) 
-        {
-            int? index = null;
-            for (int i = 0; i < myCharArray.Length; i++)
-            {
-                if (myCharArray[i] == charForSearching)
+                for (int j = counter; j < charArrayForSearching.Length;)
                 {
-                    index = i;
-                    return index;
+                    if (myStringList[i] == charArrayForSearching[j])
+                    {
+                        counter++;
+                        break;
+                    }
+                    else
+                    {
+                        counter = 0;
+                        break;
+                    }
                 }
             }
+            return false;
+
+        }
+        public int IndexOf(char charForSearching)
+        {
+            int index;
+            index = myStringList.IndexOf(charForSearching);
             return index;
         }
-
-
-        public static MyString operator +(MyString firstCharArray, MyString secondCharArray)
+        public static MyString operator +(MyString firstStringList, MyString secondStringList)
         {
-            MyString result = new MyString();
-            result.myCharArray = new char[firstCharArray.myCharArray.Length + secondCharArray.myCharArray.Length];
-            Array.Copy(firstCharArray.myCharArray, 0, result.myCharArray, 0, firstCharArray.myCharArray.Length);
-            Array.Copy(secondCharArray.myCharArray, 0, result.myCharArray,firstCharArray.myCharArray.Length, secondCharArray.myCharArray.Length);
-            return result;
+            firstStringList.myStringList.AddRange(secondStringList.myStringList);
+            return firstStringList;
         }
-        public static MyString operator+ (MyString string1, char char1) 
+        public static MyString operator +(MyString firstStringList, char char1)
         {
-            MyString result = new MyString();
-            result.myCharArray = new char[string1.myCharArray.Length +1];
-            Array.Copy(string1.myCharArray, 0, result.myCharArray, 0, string1.myCharArray.Length);
-            result.myCharArray[result.myCharArray.GetUpperBound(0)] = char1;
-            return result;
+            firstStringList.myStringList.Add(char1);
+            return firstStringList;
         }
-        public char[] ShowMyString() 
+        public static MyString operator +(MyString firstStringList, char[] charArr)
         {
-            return myCharArray;
+            firstStringList.myStringList.AddRange(charArr);
+            return firstStringList;
+        }
+        public static MyString operator +(MyString firstStringList, string firststring)
+        {
+            firstStringList.myStringList.AddRange(firststring);
+            return firstStringList;
+        }
+
+        public char[] ShowMyString()
+        {
+            char[] result = myStringList.ToArray();
+            return result;
         }
     }
 }

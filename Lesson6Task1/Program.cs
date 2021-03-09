@@ -12,28 +12,43 @@ namespace Lesson6Task1
             Student student3 = new Student("Shapka", "Ushanka");
             Student student4 = new Student("Bus", "Trolley   ");
             Student student5 = new Student("Aleksandr", "Shevchuk");
-            Student student6 = new Student("Gerbert", "Shildt    ");
+            Student student6 = new Student("Herbert", "Shildt    ");
             Student student7 = new Student("Jeffrey", "Richter    ");
             Student student8 = new Student("Sam", "Fisher    ");
             Student student9 = new Student("Jack", "Sparrow    ");
-            Student student10 = new Student("Seryozha", "Makarosha");
 
-            Group AspDotNetCoreDevelopers = new Group(220116, student0, student1, student2, student3, student4);
-            Group UnityDevelopers = new Group(220117, student5, student6, student7, student8, student9);
+            Group aspDotNetCoreDevelopers = new Group(220116);
+            Group unityDevelopers = new Group(220117);
 
-            Console.WriteLine(new string('-',120));
-            Console.WriteLine(AspDotNetCoreDevelopers.ShowGroupInfo());
-            Console.WriteLine(UnityDevelopers.ShowGroupInfo());
+            student5.AddToGroup(unityDevelopers);
+            student6.AddToGroup(unityDevelopers);
+            student7.AddToGroup(unityDevelopers);
+            student8.AddToGroup(unityDevelopers);
+            student9.AddToGroup(unityDevelopers);
+            student0.AddToGroup(aspDotNetCoreDevelopers);
+            student1.AddToGroup(aspDotNetCoreDevelopers);
+            student2.AddToGroup(aspDotNetCoreDevelopers);
+            student3.AddToGroup(aspDotNetCoreDevelopers);
+            student4.AddToGroup(aspDotNetCoreDevelopers);
+
+            student1.RemoveFromGroup(aspDotNetCoreDevelopers);
+            student1.AddToGroup(unityDevelopers);
+            student1.AddToGroup(aspDotNetCoreDevelopers);
+
+            aspDotNetCoreDevelopers.AddNewStudentToGroup(student6);
+            aspDotNetCoreDevelopers.AddNewStudentToGroup(student5);
+
+            unityDevelopers.RemoveStudentFromGroup(student9);
+            unityDevelopers.RemoveStudentFromGroup(student8);
+
+            student8.AddToGroup(aspDotNetCoreDevelopers);
+            student9.AddToGroup(aspDotNetCoreDevelopers);
+
+
             Console.WriteLine(new string('-', 120));
-
-            UnityDevelopers.MoveStudentToAnotherGroup(UnityDevelopers[0], AspDotNetCoreDevelopers);
-            UnityDevelopers.MoveStudentToAnotherGroup(UnityDevelopers[1], AspDotNetCoreDevelopers);
-            UnityDevelopers.MoveStudentToAnotherGroup(UnityDevelopers[2], AspDotNetCoreDevelopers);
-            AspDotNetCoreDevelopers.MoveStudentToAnotherGroup(AspDotNetCoreDevelopers[2], UnityDevelopers);
-
+            Console.WriteLine(aspDotNetCoreDevelopers.ShowGroupInfo());
             Console.WriteLine(new string('-', 120));
-            Console.WriteLine(AspDotNetCoreDevelopers.ShowGroupInfo());
-            Console.WriteLine(UnityDevelopers.ShowGroupInfo());
+            Console.WriteLine(unityDevelopers.ShowGroupInfo());
             Console.WriteLine(new string('-', 120));
         }
     }
